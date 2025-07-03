@@ -1,0 +1,130 @@
+/* General Styling */
+.wishlist-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 5rem auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.wishlist-container h2 {
+  text-align: center;
+  color: #4f4f4f;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Wishlist Item Styling */
+.wishlist-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wishlist-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-card:hover {
+  transform: scale(1.05);
+}
+
+.wishlist-item-img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.wishlist-info h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.wishlist-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Remove Wishlist Button Styling */
+.remove-wishlist-btn {
+  background-color: transparent;
+  border: none;
+  color: #f44336; /* Red color for the heart icon */
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remove-wishlist-btn:hover {
+  color: #d32f2f;
+}
+
+/* Buy Now Button Styling with Linear Gradient */
+.buy-now-btn {
+  background: linear-gradient(90deg, #9c27b0, #e1bee7); /* Purple to light purple gradient */
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.buy-now-btn:hover {
+  background: linear-gradient(90deg, #7b1fa2, #ba68c8); /* Darker gradient on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .wishlist-items {
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .wishlist-card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 350px; /* Maximum width for cards */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  .buy-now-btn {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .wishlist-items {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .wishlist-card {
+    width: 100%; /* Full width for cards */
+    max-width: 90%; /* Take up most of the screen on mobile */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  .buy-now-btn {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+}

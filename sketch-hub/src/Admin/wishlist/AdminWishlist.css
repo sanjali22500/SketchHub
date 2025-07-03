@@ -1,0 +1,120 @@
+.admin-wishlist-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  margin-top: -40rem;
+  margin-left: 20rem;
+  background: #f3e8ff; /* Light purple background */
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(100, 100, 111, 0.2);
+  text-align: center;
+}
+
+.admin-wishlist-container h2 {
+  font-size: 28px;
+  color: #5e3ea1;
+  margin-bottom: 20px;
+}
+
+.admin-search-container {
+  margin-bottom: 20px;
+}
+
+.admin-search {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #c9b6fc;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(138, 43, 226, 0.1);
+  transition: 0.3s;
+}
+
+.admin-search:focus {
+  border-color: #a066ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(160, 102, 255, 0.4);
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+  max-height: 500px; /* Set a height for the scrollable area */
+  overflow-y: auto; /* Add vertical scrolling */
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid #e0d4f7;
+  font-size: 16px;
+}
+
+.admin-table th {
+  background-color: #d9c6f9;
+  color: #4a2f7e;
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f5f0ff;
+}
+
+.admin-table img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles for Update and Delete */
+.admin-btn {
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.admin-btn.update {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.admin-btn.update:hover {
+  background-color: #45a049;
+}
+
+.admin-btn.delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.admin-btn.delete:hover {
+  background-color: #e53935;
+}
+
+/* Scrollbar Styling */
+.admin-table-wrapper::-webkit-scrollbar {
+  height: 10px;
+}
+
+.admin-table-wrapper::-webkit-scrollbar-thumb {
+  background: #a066ff;
+  border-radius: 10px;
+}
+
+.admin-table-wrapper::-webkit-scrollbar-track {
+  background: #e0d4f7;
+}

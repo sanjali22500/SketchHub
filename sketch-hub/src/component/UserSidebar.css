@@ -1,0 +1,114 @@
+/* General Sidebar Styles */
+.user-sidebar {
+  position: fixed;
+  top: 10rem;  /* Adjusted this to move the sidebar lower */
+  left: 0;
+  width: 250px;
+  height: 45%;
+  background-color: #ffffff;
+  z-index: 999;
+  transform: translateX(-100%);  /* Sidebar hidden by default */
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-sidebar-active {
+  transform: translateX(0);  /* Sidebar visible when active */
+}
+
+.user-sidebar-content {
+  padding: 20px;
+}
+
+.user-sidebar-header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-sidebar-nav li {
+  margin: 15px 0;
+}
+
+.user-sidebar-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.user-sidebar-nav a:hover {
+  background-color: #be8ef9;
+}
+
+.user-sidebar-active-link {
+  background-color: #e2d6f1;  /* Highlight active link */
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  font-size: 30px;
+  color: rgb(53, 49, 49);
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 5rem;
+  display: none;  /* Hidden by default */
+}
+
+/* Show Hamburger for Mobile Screens */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;  /* Show hamburger on small screens */
+  }
+
+  .user-sidebar {
+    height: 50%;
+    width: 70%;  /* Sidebar width for mobile */
+  }
+
+  .user-sidebar-active {
+    transform: translateX(0);  /* Sidebar visible on mobile */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 769px) {
+  .hamburger-icon {
+    display: none;  /* Hide hamburger on large screens */
+  }
+
+  .user-sidebar {
+    transform: translateX(0);  /* Sidebar is visible by default on large screens */
+    width: 250px;
+  }
+
+  .user-sidebar-content {
+    padding: 30px;
+  }
+}
+
+.logout-btn {
+  background-color: #979190; /* Red background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}

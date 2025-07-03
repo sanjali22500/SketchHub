@@ -1,0 +1,119 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;  /* Stack the form and table vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin-top: 60px;
+  width: 100%;
+}
+
+.upload-col {
+  width: 60%;              /* Adjust width to make it more centered */
+  margin: 30px;
+  margin-left: 20%;
+}
+.upload-col h2{
+  color: white;
+  margin-right: 10rem;
+}
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid #ccc;
+  margin-top: 24px;
+  margin-left: 18rem;
+  background: #bcb6b6;
+  width: 100%;             /* Ensure the form takes full width of its container */
+  max-width: 400px;        /* Optional: limit max width for the form */
+}
+
+.upload-input {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.upload-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  max-width: 1000px;       /* Optional: max width for the table */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #f4f4f4;
+}
+
+.product-image {
+  width: 90px;
+  /* height: 50px; */
+  object-fit: cover;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .upload-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-col {
+    width: 80%;
+    margin: 30px 0;
+  }
+
+  .upload-form {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .product-table th, 
+  .product-table td {
+    padding: 6px;
+  }
+
+  .product-image {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .upload-form {
+    padding: 12px;
+  }
+
+  .upload-input {
+    padding: 6px;
+  }
+
+  .upload-button {
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 60px;
+  }
+}

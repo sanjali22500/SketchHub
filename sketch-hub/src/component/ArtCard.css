@@ -1,0 +1,125 @@
+.cards-section{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.enhanced-art-card {
+    width: 310px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .enhanced-art-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .enhanced-img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .enhanced-art-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .enhanced-art-card:hover .enhanced-art-img {
+    transform: scale(1.05);
+  }
+  
+  .enhanced-sale-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff3e3e;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .enhanced-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .enhanced-art-card:hover .enhanced-overlay {
+    height: 100%;
+  }
+  
+  .enhanced-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .enhanced-details h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .enhanced-price {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .enhanced-old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .enhanced-new-price {
+    color: #222;
+    font-weight: 600;
+  }
+  
+  .enhanced-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .btn-purple {
+    background-color: #b98add;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-purple:hover {
+    background-color: #d7b4f3;
+  
+    transform: scale(1.05);
+  }
+  

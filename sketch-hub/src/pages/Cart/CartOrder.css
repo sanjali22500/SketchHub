@@ -1,0 +1,49 @@
+.order-payment-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .order-payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-payment-form input,
+  .order-payment-form select {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .qr-section {
+    text-align: center;
+  }
+  
+  .qr-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  
+  .order-payment-btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .order-payment-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .order-payment-message {
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+  }
+  

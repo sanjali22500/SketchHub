@@ -1,0 +1,84 @@
+/* AdminLogin.css */
+
+.adminlogin-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #E6E0F8, #C3B9F5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adminlogin-box {
+  background: #fff;
+  padding: 3rem 4rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(94, 65, 231, 0.25);
+  width: 360px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.adminlogin-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5E41E7; /* purple */
+  margin-bottom: 2rem;
+  letter-spacing: 1.2px;
+}
+
+.adminlogin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.adminlogin-input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #C3B9F5; /* light purple border */
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  color: #4a4a4a;
+}
+
+.adminlogin-input::placeholder {
+  color: #a399d7; /* lighter purple placeholder */
+}
+
+.adminlogin-input:focus {
+  border-color: #5E41E7; /* purple focus */
+  box-shadow: 0 0 6px rgba(94, 65, 231, 0.6);
+}
+
+.adminlogin-btn {
+  background-color: #5E41E7; /* purple button */
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adminlogin-btn:hover {
+  background-color: #482dcc; /* darker purple on hover */
+}
+
+.adminlogin-error {
+  color: #b00020;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 420px) {
+  .adminlogin-box {
+    padding: 2rem 2.5rem;
+    width: 100%;
+  }
+}

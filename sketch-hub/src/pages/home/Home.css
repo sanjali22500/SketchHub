@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .login-vdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .h-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center the text */
+    color: white;
+    width: 80%; /* Make it responsive */
+  }
+  
+  .hero {
+    font-size: 3rem; /* 60px is too big for small screens */
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s, background 0.4s;
+    text-align: center;
+    background: linear-gradient(to right, #8045ac, #b98add);
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  .btn:hover {
+    background: transparent;
+    color: white;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, pink, purple);  }
+  
+  /* ABOUT Section */
+  .about_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .hleft img {
+    width: 30rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+  }
+  
+  .hright {
+    width: 55%;
+    margin-top: -3rem;
+    color: white;
+  }
+  
+  .hright h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+  }
+  
+  .hright p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  
+  .about_btn {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .about_btn .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* ARTWORK Section */
+  .art-work-sec {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .art-work-sec h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .art-work-sec p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  
+  /* RESPONSIVE DESIGN FOR MOBILE & TABLETS */
+  
+  @media (max-width: 1024px) {
+    .h-text {
+      width: 80%;
+      margin-left: 0;
+      font-size: 2.5rem;
+    }
+  
+    .hero {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 10px 18px;
+      margin: 10px 0;
+    }
+  
+    .about_content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .hleft img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .hright {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .hright h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hright p {
+      font-size: 1rem;
+    }
+  
+    .art-work-sec h1 {
+      font-size: 2.5rem;
+    }
+  
+    .art-work-sec p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .h-text {
+      width: 90%;
+      margin-left: 0;
+      font-size: 2rem;
+    }
+    
+  
+    .hero {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .btn {
+      font-size: 15px;
+      padding: 8px 15px;
+    }
+  
+    .about_content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hleft img {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+  
+    .hright h1 {
+      font-size: 2rem;
+    }
+  
+    .hright p {
+      font-size: 1rem;
+    }
+  
+    .art-work-sec {
+      margin-left: 0;
+      padding: 1.5rem;
+    }
+  
+    .art-work-sec h1 {
+      font-size: 2.2rem;
+    }
+  
+    .art-work-sec p {
+      font-size: 1rem;
+    }
+  }

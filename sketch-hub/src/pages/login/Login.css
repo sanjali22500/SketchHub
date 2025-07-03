@@ -1,0 +1,133 @@
+/* Login Page Container */
+.login-container {
+    height: 80vh;
+    width: 60%;
+    margin-left: 20rem;
+    background-color: white;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+/* Logo Styling */
+.blacklogo {
+    width: 60px;
+    margin-left: 47.8%;
+    margin-top: 5rem;
+}
+
+/* Title Styling */
+.Login-title {
+    margin-top: 15px;
+    color: rgb(68, 67, 67);
+    text-align: center;
+}
+
+/* Label Styling */
+label {
+    font-size: 15px;
+}
+
+/* Input Field Styling */
+.login-input {
+    font-size: 15px;
+    width: 450px;
+    height: 4rem;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+/* Form Styling */
+.login-form {
+    margin-top: 3rem;
+    margin-left: 15rem;
+    width: 70rem;
+}
+
+/* Login Button Styling */
+.login {
+    height: 2.5rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* New Account Button Styling */
+.new-account {
+    height: 3rem;
+    border: none;
+    width: 31.5rem;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Center the login container on smaller screens */
+    .login-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3rem;
+    }
+
+    /* Adjust logo position */
+    .blacklogo {
+        margin-left: 45%; /* Center the logo for small screens */
+        margin-top: 2rem;
+    }
+
+    /* Adjust login form width and position */
+    .login-form {
+        margin-top: 2rem;
+        margin-left: 0;
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    /* Adjust input field width for smaller screens */
+    .login-input {
+        width:450px; /* Input fields take up full width */
+       
+    }
+
+    /* Button adjustment */
+    .login {
+        width: 100%; /* Make button full width on mobile */
+    }
+
+    .new-account {
+        width: 100%; /* Make new account button full width on mobile */
+    }
+
+    /* Adjust logo size */
+    .blacklogo {
+        width: 50px; /* Slightly reduce the size of the logo */
+    }
+}
+/* Login.css */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4b0082; /* Light purple or your preferred color */
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-btn svg {
+    margin-right: 8px;
+  }
+  
+  .login-container {
+    position: relative;
+    padding-top: 40px; /* Add some space for the back button */
+  }
+  

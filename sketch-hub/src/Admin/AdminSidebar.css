@@ -1,0 +1,105 @@
+.admin-nav{
+  width:100vw;
+  height: 5rem;
+  margin-left: 8rem;
+  margin-top: -1.5rem;
+  background: #201f20;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.admin-nav h1{
+  text-align: centaer;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #201f20;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .sidebar h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebar h1{
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  .admin-logo img{
+    margin-top: -3rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 120px;
+    margin-left: 2.5rem;
+  }
+  
+  .sidebar ul li {
+    padding: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+    background: #8a2be2;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  /* Hover Effect */
+  .sidebar ul li:hover {
+    background: #7d26cd;
+  }
+  
+  /* Active Effect */
+  .sidebar ul li.active {
+    background: #5d5763; /* Thoda dark purple */
+  }
+  
+  /* Anchor Tag Style */
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+ .admin-nav {
+  width: 100vw;
+  height: 5rem;
+  margin-left: 14rem;
+  margin-top: -1.5rem;
+  background: #201f20;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.admin-nav h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+.logout-icon{
+  margin-right: 10px;
+}
+
+.logout-btn {
+  background: #a64ac9;
+  border: none;
+  width: 8rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-right: 27rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #6c63ff;
+}

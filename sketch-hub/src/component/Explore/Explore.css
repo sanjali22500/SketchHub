@@ -1,0 +1,47 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Explore Container */
+.explore-container {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Explore Title */
+.explore-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 6rem;
+}
+
+/* Span Styling */
+span {
+    color: rgb(121, 72, 165);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust the explore-title margin to make it more centered */
+    .explore-title {
+        margin-left: 0; /* Remove the left margin for mobile */
+        font-size: 30px; /* Decrease font size for smaller screens */
+        margin-top: 6rem; /* Adjust margin-top for better spacing */
+    }
+
+    /* Ensure explore-container takes full width and content is centered */
+    .explore-container {
+        width: 100%; /* Full width for small screens */
+        margin: 0;
+    }
+
+    /* Span text */
+    span {
+        font-size: 18px; /* Slightly reduce span font size on mobile */
+    }
+}

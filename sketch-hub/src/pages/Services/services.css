@@ -1,0 +1,283 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c79eeb, #e8d4ff);
+  color: #333;
+}
+
+/* Hero Section */
+.services-hero {
+  /* background: linear-gradient(to right, #c59fff, #a86ddf); */
+  color: white;
+  text-align: center;
+  background-image: url(../../images/about-img.jpg);
+  padding: 100px 10% 120px;
+  border-radius: 0 0 40px 40px;
+  background-size: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.services-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: white;
+  color: #7d3cff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #7d3cff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Services Overview */
+.services-overview {
+  padding: 80px 10% 40px;
+  text-align: center;
+}
+
+.services-h2 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 50px;
+}
+
+.services-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+  color: #4a0064;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 30px rgba(123, 31, 162, 0.3);
+}
+
+.services-h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #7e30d3;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: #f2e5ff;
+  padding: 60px 10%;
+  border-radius: 30px;
+  margin-top: 4rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.why-choose-us ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.why-choose-us li {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.why-choose-us li:hover {
+  transform: translateY(-6px);
+  background-color: #ede0ff;
+}
+
+/* FAQs */
+.faqs {
+  margin-top: 4rem;
+  padding: 60px 10%;
+  background-color: #fff3ff;
+  border-radius: 20px;
+}
+
+.faqs h2 {
+  font-size: 2.2rem;
+  color: #6a1b9a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+details {
+  background-color: #f9ecff;
+  border: 1px solid #e0baff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #741ec5;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .services-hero p {
+    font-size: 1rem;
+  }
+
+  .services-h2 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+/* Enhanced fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Glow Hover Effect */
+.service-card:hover {
+  box-shadow: 0 12px 30px rgba(123, 31, 162, 0.35), 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* FAQ interaction */
+details[open] {
+  background-color: #f3d8ff;
+  border-color: #c77dff;
+}
+
+/* CTA glowing animation */
+.cta-button {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  animation: glowPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5);
+  }
+}
+/* Enhanced fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Glow Hover Effect */
+.service-card:hover {
+  box-shadow: 0 12px 30px rgba(123, 31, 162, 0.35), 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* FAQ interaction */
+details[open] {
+  background-color: #f3d8ff;
+  border-color: #c77dff;
+}
+
+/* CTA glowing animation */
+.cta-button {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  animation: glowPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5);
+  }
+}

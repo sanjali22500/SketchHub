@@ -1,0 +1,75 @@
+.admin-table-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  margin-left: 20rem;
+  margin-top: -40rem;
+  padding: 20px;
+  background: #f3e8ff; /* Light purple background */
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(100, 100, 111, 0.2);
+  overflow-x: auto; /* Add horizontal scrolling */
+}
+
+.admin-table-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #5e3ea1;
+  margin-bottom: 20px;
+}
+
+.admin-search {
+  display: block;
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto 25px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #c9b6fc;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(138, 43, 226, 0.1);
+  transition: 0.3s;
+}
+
+.admin-search:focus {
+  border-color: #a066ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(160, 102, 255, 0.4);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid #e0d4f7;
+  font-size: 16px;
+}
+
+.admin-table th {
+  background-color: #d9c6f9;
+  color: #4a2f7e;
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f5f0ff;
+}
+
+.admin-table img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a scrollable effect to the table */
+.admin-table-container {
+  max-height: 685px; /* Set a height for the scrollable area */
+  overflow-y: auto; /* Add vertical scrolling */
+}
